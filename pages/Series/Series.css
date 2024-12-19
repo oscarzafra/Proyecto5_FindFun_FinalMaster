@@ -1,0 +1,102 @@
+.series {
+    padding: 2rem 8rem;
+    min-height: 80vh;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-bottom: 2px solid var(--divider);
+    background-color: #f4f4f4;
+    position: relative; 
+  }
+  
+  @media (max-width: 770px) {
+    .series {
+      padding: 2rem;
+    }
+  }
+  
+  .series-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .series-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: #7b2daf;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .filter {
+    position: absolute; 
+    top: 2rem; 
+    right: 2rem; 
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    z-index: 10; 
+  }
+  
+  #genreFilter {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  #genreFilter:hover {
+    border-color: #ff6347;
+    box-shadow: 0px 4px 8px rgba(255, 99, 71, 0.3);
+  }
+  
+  .series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    
+  }
+  
+  @media (max-width: 770px) {
+    .series-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  .series-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .series-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .series-container figcaption {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    
+  }
+  
+  @media (max-width: 770px) {
+    .series-container figcaption {
+      font-size: 0.9rem;
+    }
+  }
