@@ -13,7 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 :root {
   --primary-dark: whitesmoke;
   --bg-dark: #111111;
@@ -62,3 +61,57 @@ a,
 p {
   font-size: 1.1rem;
 }
+
+
+@media (max-width: 768px) {
+  
+  body {
+    font-size: 1rem;
+  }
+
+  
+  .my-btn {
+    width: 7rem; 
+  }
+
+  
+  .film-card, .serie-card {
+    width: 100%; 
+    margin: 0 auto; 
+  }
+
+  
+  .gallery-item {
+    width: 100%; 
+  }
+
+  /* Ajustes en los filtros */
+  .filter {
+    width: 100%; /* Hace que el filtro ocupe el 100% en pantallas pequeñas */
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Ajustes en las secciones */
+  .films, .series {
+    padding: 2rem; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .films-container, .series-container {
+    grid-template-columns: 1fr; /* Hace que las películas y series se muestren en una sola columna */
+  }
+
+  /* Ajustes en los encabezados */
+  .films-title, .series-title {
+    font-size: 2rem; /* Ajusta el tamaño de los encabezados */
+  }
+
+  .gallery-arrow {
+    font-size: 1.2rem; /* Ajusta el tamaño de los botones de la galería */
+  }
+
+  .inicio h1 {
+    font-size: 2rem; /* Ajusta el tamaño de los textos */
+  }
+}
+

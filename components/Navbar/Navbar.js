@@ -10,7 +10,6 @@ export const changeTheme = () => {
 };
 
 // Cambia el texto en función del tema que se aplica
-
 export const changeText = () => {
   const themeBtn = document.querySelector("#themeBtn");
   if (themeBtn.innerText === "☀") {
@@ -21,21 +20,18 @@ export const changeText = () => {
 };
 
 // Muestra el inicio de sesión
-
 export const showLoginModal = () => {
   const modalBg = document.querySelector(".modal-bg");
   modalBg.style.display = "flex"; 
 };
 
 // Oculta el inicio de sesión
-
 export const closeLoginModal = () => {
   const modalBg = document.querySelector(".modal-bg");
   modalBg.style.display = "none"; 
 };
 
 // Requisitos y comportamiento de inicio de sesión
-
 export const handleLogin = () => {
   const loginBtn = document.querySelector("#loginBtn");
   loginBtn.addEventListener("click", showLoginModal);
@@ -58,27 +54,24 @@ export const handleLogin = () => {
   });
 };
 
-// Barra de búsqueda
-
-export const handleSearch = () => {
-  const searchBtn = document.querySelector("#searchBtn");
-  const searchBar = document.querySelector("#searchBar");
-
-  searchBtn.addEventListener("click", () => {
-    const query = searchBar.value.trim();
-    if (query) {
-      alert(`Buscando: ${query}`);
-    } else {
-      alert("Por favor, ingresa un término de búsqueda.");
-    }
-  });
+// Función para alternar la visibilidad del menú desplegable
+export const toggleMenu = () => {
+  const menu = document.querySelector("nav > ul");
+  menu.classList.toggle("show");
 };
 
 // Estructura del Navbar
-
 export const Navbar = () => `
   <nav>
     <h2>FindFun</h2>
+  
+    <div id="menuToggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+ 
     <ul>
       <li>
         <a href="#" id="iniciolink">Inicio</a> 
@@ -88,10 +81,6 @@ export const Navbar = () => `
       </li>
       <li>
         <a href="#" id="serieslink">Series</a> 
-      </li>
-      <li>
-        <input type="text" id="searchBar" placeholder="Busca tu película/serie"/>
-        <button id="searchBtn">Buscar</button>
       </li>
       <li>
         <button id="loginBtn">Iniciar sesión</button> 
