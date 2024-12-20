@@ -54,24 +54,10 @@ export const handleLogin = () => {
   });
 };
 
-// Función para alternar la visibilidad del menú desplegable
-export const toggleMenu = () => {
-  const menu = document.querySelector("nav > ul");
-  menu.classList.toggle("show");
-};
-
 // Estructura del Navbar
 export const Navbar = () => `
   <nav>
     <h2>FindFun</h2>
-  
-    <div id="menuToggle" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    
- 
     <ul>
       <li>
         <a href="#" id="iniciolink">Inicio</a> 

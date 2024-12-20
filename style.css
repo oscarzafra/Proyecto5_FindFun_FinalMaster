@@ -85,33 +85,32 @@ p {
     width: 100%; 
   }
 
-  /* Ajustes en los filtros */
+  
   .filter {
-    width: 100%; /* Hace que el filtro ocupe el 100% en pantallas pequeñas */
+    width: 100%; 
     padding: 1rem;
     box-sizing: border-box;
   }
 
-  /* Ajustes en las secciones */
   .films, .series {
-    padding: 2rem; /* Reduce el padding en pantallas pequeñas */
+    padding: 2rem;
   }
 
   .films-container, .series-container {
-    grid-template-columns: 1fr; /* Hace que las películas y series se muestren en una sola columna */
+    grid-template-columns: 1fr; 
   }
 
-  /* Ajustes en los encabezados */
+
   .films-title, .series-title {
-    font-size: 2rem; /* Ajusta el tamaño de los encabezados */
+    font-size: 2rem; 
   }
 
   .gallery-arrow {
-    font-size: 1.2rem; /* Ajusta el tamaño de los botones de la galería */
+    font-size: 1.2rem; /
   }
 
   .inicio h1 {
-    font-size: 2rem; /* Ajusta el tamaño de los textos */
+    font-size: 2rem; 
   }
 }
 
